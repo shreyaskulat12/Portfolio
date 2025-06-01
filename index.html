@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreyas - Student Porfolio</title>
+   <link rel="preconnect" href="https://fonts.google.com/specimen/Poppins">
+   <link rel="preconnect" href="https://fonts.google.com/specimen/Playfair+Display">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: azure;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav{
+            display:flex;
+            justify-content:space-around;
+            align-items:center;
+            height:80px;
+            background-color:rgb(1, 1, 51) ;
+        }
+        nav ul{
+            display:flex;
+            justify-content:center;
+        }
+        nav ul li{
+           list-style:none;
+           margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color:white;
+        }
+        nav ul li a:hover{
+          color:rgb(168, 125, 237);
+          font-size:1.01rem;
+        }
+        main hr{
+            border:0;
+            background:#9c97f1;
+            height:1.2px;
+            margin:40px 84px;
+        }
+
+      
+        .left{
+            font-size:1.5rem;
+        }
+        .firstSection{
+            display:flex;
+            justify-content:space-around;
+            margin:10px 0;
+        }
+        .firstSection > div{
+            width:42%;
+            
+        }
+        .leftsection{
+            font-size: 2.7rem;
+            margin:50px 0;
+        }
+        .leftsection .buttons{
+            padding:50px 0;
+        }
+        .leftsection .btn{
+            padding:12px;
+            background:#1e2167;
+            color:white;
+            border:2px solid white;
+            border-radius:6px;
+            font-size:20px;
+            cursor:pointer;
+        }
+        .rightsection img{
+            width:80%; 
+        }
+        .purple{
+            color:rgb(141, 75, 203);
+        }
+        .text-gray{
+            color:gray;
+        }
+        #element{
+            color:blueviolet;
+        }
+        .secondSection{
+            max-width:80vw;
+            margin:auto;
+            height:80vh;
+        }
+        .secondSection h1{
+            font-size:1.9rem;
+        }
+        .secondSection .box {
+            background:white;
+            width:80vw;
+            height:2px;
+            margin:56px 0;
+            display:flex;
+        }
+        .secondSection .vertical{
+            height:93px;
+            width:1px;
+            background-color:white;
+            margin:0 100px; 
+        }
+        .image-top{
+            width:23px;
+            position: relative;
+            top:-32px;
+            left:-9px;
+        }
+        .vertical-title{
+            position: relative;
+            top:75px;
+            width:150px;
+            font-size: 14px;
+        }
+        .vertical-desc{
+            position: relative;
+            top:86px;
+            color: grey;
+            width: 150px;
+            font-size: 9px;
+
+        }
+        footer{
+            background-color:#0e0e1a;
+          
+
+        }
+        .footer{
+            display:flex;
+            padding:23px 122px;
+            justify-content:space-evenly ;
+        }
+        .footer ul{
+            list-style:none;
+        }
+        .footer > div{
+            width: 100px;
+        }
+        footer .footer-second ul li{
+            padding:1px;
+            font-size:10px
+        }
+         footer .footer-third ul li{
+            padding:1px;
+            font-size:10px
+        }
+         footer .footer-fourth ul li{
+            padding:1px;
+            font-size:10px
+        }
+        
+        
+        footer .footer-rights{
+            text-align:center;
+            color:gray;
+            padding:12px 0;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Shreyas Porfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                <li><a href="https://docs.google.com/document/d/1W6llHAXq2Zvo70EgtPYTbIgT24PRV1nI/edit?usp=sharing&ouid=113155565028099884741&rtpof=true&sd=true" target="_blank">About</a></li>
+    <li><a href="https://drive.google.com/drive/folders/1Tq68zaPLIZj-Z6On8lCE0ZyB9AaR559k?usp=sharing" target="_blank">Certificates</a></li>
+    <li><a href="https://github.com/shreyaskulat12/SnakeGameProject" target="_blank" >Projects</a></li>
+    <li><a href="#" onclick="showSection('contact')">Contact Me</a></li>
+                
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftsection">
+                Hi, My name is <span class="purple">Shreyas</span>
+                <div>and I am a Student of Sanjivani University </div>
+                <span id="element"></span>
+                <div class="buttons">
+                     <a href="ShreyasResume.docx" download><button class="btn">Download Resume</button></a>
+                    <a href="https://github.com/shreyaskulat12" target="_blank"><button class="btn">Visit GitHub</button></a>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="https://png.pngtree.com/png-vector/20240312/ourmid/pngtree-smart-college-student-using-computer-at-home-he-is-studying-and-png-image_11716756.png">
+               
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Skills</h1>
+            <div class="box">
+            <div class="vertical">
+                <img class="image-top" src="htmlcss3.png" alt="">
+                <div class="vertical-title">
+                    HTML CSS Developer
+                </div>
+                <div class="vertical-desc">
+                     I'm a 1st year Computer Science Engineering student specializing in Artificial Intelligence and Machine Learning.
+    Passionate about web development, I’m currently focused on building responsive websites using HTML and CSS.
+    Always eager to learn and grow in both frontend technologies and AI/ML concepts.
+                </div>
+            </div>
+            <div class="vertical">
+                <img class="image-top" src="python.png" alt="">
+                <div class="vertical-title">
+                  Basics Python Coding
+                </div>
+                <div class="vertical-desc">
+                     I'm currently learning basic Python programming — writing small scripts, solving logical problems, and understanding how Python supports AI/ML development.
+                </div>
+            </div> <div class="vertical">
+                <img class="image-top" src="javascript.png" alt="">
+                <div class="vertical-title">
+                   Basics Javascript Coding
+                </div>
+                <div class="vertical-desc">
+                    I'm passionate about coding and currently learning the basics of JavaScript. I enjoy creating interactive web elements and writing small programs using conditionals, loops, and functions. My goal is to combine JavaScript skills with Python-based AI tools to build intelligent web applications in the future
+                </div>
+            </div> 
+            <div class="vertical">
+                <img class="image-top" src="C++.png" alt="">
+                <div class="vertical-title">
+                    Basics C++ Coding(DSA)
+                </div>
+                <div class="vertical-desc">
+                     My C++ journey includes topics like variables, loops, conditionals, arrays, functions, and classes. I'm also working on basic DSA concepts such as arrays, stacks, queues, and linked lists to build my logic and problem-solving skills.
+                </div>
+            </div>
+            <div class="vertical">
+                <img class="image-top" src="developer1.png" alt="">
+                <div class="vertical-title">
+                   UI/UX Designer(Figma)
+                </div>
+                <div class="vertical-desc">
+                    I design user interfaces using <strong>Figma</strong>, where I create wireframes, mobile app layouts, and interactive prototypes. I enjoy exploring the intersection of design, code, and AI to create smart, user-friendly solutions
+                </div>
+            </div>
+         
+        </section>      
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                Shreyas Kulat Portfolio
+            </div>
+            <div class="footer-second">
+            <ul>
+                <li>My Journey</li>
+                <li>Who I Am</li>
+                <li>Profile</li>
+                <li>Biography</li>
+            </ul>
+            </div>
+            <div class="footer-third">
+            <ul>
+                <li>My Work</li>
+                <li>Portfolio</li>
+                <li>Case Studies</li>
+                <li>Get in Touch</li>
+            </ul>
+            </div>
+            <div class="footer-fourth">
+            <ul>
+                <li>Creations</li>
+                <li>Future</li>
+                <li>Aspirations</li>
+                <li>AI Learning</li>
+            </ul>
+            </div>
+        </div>
+            <div class="footer-rights">
+                Copyright &#169;.shreyasportfolio.com | All rights reserved
+            </div>
+        
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Studying in CSE', 'Specilization in AIML'],
+          typeSpeed: 50,
+          loop:true
+        });
+      </script>
+</body>
+
+</html>
