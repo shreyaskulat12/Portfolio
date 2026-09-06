@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <title>Shreyas Vijay Kulat — Engineer | AI/ML | CSE Student | Sanjivani University</title>
+    <meta name="description" content="Shreyas Vijay Kulat is a third-year B.Tech Computer Science Engineering student specializing in Artificial Intelligence and Machine Learning at Sanjivani University. Building practical software solutions and exploring AI, ML, web development and data science." />
+    <meta name="keywords" content="Shreyas Kulat, Shreyas Vijay Kulat, CSE student, AI ML engineer, software developer, Python developer, JavaScript, React, Sanjivani University, B.Tech AI ML" />
+    <meta name="author" content="Shreyas Vijay Kulat" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://shreyaskulat.dev/" />
+    <meta property="og:title" content="Shreyas Vijay Kulat — Engineer | AI/ML Enthusiast" />
+    <meta property="og:description" content="Building practical software solutions and exploring AI, ML and modern web development." />
+    <meta property="og:image" content="https://shreyaskulat.dev/og-image.png" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Shreyas Vijay Kulat — Engineer | AI/ML Enthusiast" />
+    <meta name="twitter:description" content="B.Tech CSE student specializing in AI & ML. Building practical software solutions." />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Theme initialisation (prevents FOUC) -->
+    <script>
+      (function () {
+        var stored = localStorage.getItem('portfolio-theme');
+        var preferred = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        if (preferred === 'dark') document.documentElement.classList.add('dark');
+        else document.documentElement.classList.remove('dark');
+      })();
+    </script>
+  </head>
+  <body>
+    <!-- Skip link for accessibility -->
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[9999] focus:px-4 focus:py-2 focus:bg-violet-600 focus:text-white focus:rounded-lg focus:font-semibold"
+    >
+      Skip to main content
+    </a>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

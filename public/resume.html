@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shreyas Kulat — Resume</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+    body { background: #f8fafc; color: #0f172a; padding: 40px 20px; font-size: 14px; line-height: 1.5; }
+    .resume { max-width: 800px; margin: 0 auto; background: #ffffff; border-radius: 16px; padding: 40px; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1); border: 1px solid #e2e8f0; }
+    .header { border-bottom: 2px solid #7c3aed; padding-bottom: 20px; margin-bottom: 24px; }
+    .name { font-size: 32px; font-weight: 800; color: #0f172a; }
+    .title { font-size: 16px; font-weight: 600; color: #7c3aed; margin-top: 4px; }
+    .contact { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 12px; font-size: 13px; color: #475569; }
+    .contact a { color: #2563eb; text-decoration: none; }
+    .section-title { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: #7c3aed; border-bottom: 1px solid #e2e8f0; padding-bottom: 6px; margin-bottom: 12px; margin-top: 20px; }
+    .grid { display: grid; grid-template-columns: 1fr 1.6fr; gap: 30px; }
+    ul { list-style-type: square; padding-left: 18px; }
+    li { margin-bottom: 4px; }
+    .badge { display: inline-block; background: #f1f5f9; border: 1px solid #cbd5e1; border-radius: 6px; padding: 2px 8px; font-size: 12px; font-weight: 500; margin: 2px; }
+    .print-btn { display: inline-flex; align-items: center; gap: 8px; background: #7c3aed; color: #ffffff; border: none; padding: 10px 20px; border-radius: 30px; font-weight: 600; cursor: pointer; margin-bottom: 20px; }
+    @media print { .print-btn { display: none; } body { padding: 0; background: #ffffff; } .resume { box-shadow: none; border: none; } }
+  </style>
+</head>
+<body>
+  <div style="text-align: center;">
+    <button class="print-btn" onclick="window.print()">🖨️ Print / Save as PDF</button>
+  </div>
+  <div class="resume">
+    <div class="header">
+      <div style="display: flex; align-items: center; gap: 20px;">
+        <img src="/shreyas.jpg" alt="Shreyas Kulat" style="width: 80px; height: 80px; border-radius: 12px; object-fit: cover; border: 2px solid #7c3aed;">
+        <div>
+          <div class="name">Shreyas Kulat</div>
+          <div class="title">Student • Computer Science & Engineering (AIML)</div>
+        </div>
+      </div>
+      <div class="contact">
+        <span>📧 shreyash.kulat241@sanjivani.edu.in</span>
+        <span>📞 +91 9011925342</span>
+        <span>📍 Karwadi, Ahmednagar / Sanjivani University</span>
+        <span>🔗 <a href="https://github.com/shreyaskulat12" target="_blank">github.com/shreyaskulat12</a></span>
+        <span>🔗 <a href="https://www.linkedin.com/in/shreyas-kulat-789a6332b" target="_blank">LinkedIn</a></span>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div>
+        <div class="section-title">Education</div>
+        <div style="margin-bottom: 12px;">
+          <strong>B.Tech — CSE (AIML)</strong><br>
+          <span style="color:#7c3aed; font-weight:600;">F-Y CGPA: 8.25</span><br>
+          <small>Sanjivani University (2024 — 2028)</small>
+        </div>
+        <div style="margin-bottom: 12px;">
+          <strong>12th HSC (61.33%)</strong><br>
+          <small>Madhyamik V Uccha Madhyamik Vidyalay Karwadi (2022 — 2023)</small>
+        </div>
+        <div style="margin-bottom: 12px;">
+          <strong>10th SSC (80.80%)</strong><br>
+          <small>Madhyamik V Uccha Madhyamik Vidyalay Karwadi (2020 — 2021)</small>
+        </div>
+
+        <div class="section-title">Technical Skills</div>
+        <div style="margin-bottom: 12px;">
+          <span class="badge">C++</span>
+          <span class="badge">Python</span>
+          <span class="badge">R</span>
+          <span class="badge">HTML</span>
+          <span class="badge">CSS</span>
+          <span class="badge">JavaScript</span>
+          <span class="badge">MySQL</span>
+          <span class="badge">PHP</span>
+          <span class="badge">UI/UX Design</span>
+          <span class="badge">Figma</span>
+        </div>
+
+        <div class="section-title">Certifications</div>
+        <ul style="font-size: 12px;">
+          <li>Introduction to Python [IBM]</li>
+          <li>Digital 101 Journey [NASSCOM]</li>
+          <li>Fundamental of AI & GenAI [LearnTube]</li>
+          <li>Exploratory Data Analysis [NASSCOM]</li>
+          <li>Process Mining Fundamentals [Celonis]</li>
+        </ul>
+
+        <div class="section-title">Languages</div>
+        <p style="font-size: 13px;">English, Hindi, Marathi</p>
+      </div>
+
+      <div>
+        <div class="section-title">Objective</div>
+        <p style="font-size: 13px; color: #334155; margin-bottom: 16px;">
+          A highly motivated and results-driven Computer Science Engineering student specializing in Artificial Intelligence and Machine Learning, eager to apply theoretical knowledge in practical, innovative solutions. Passionate about leveraging AI/ML algorithms to solve complex real-world problems, enhance user experiences, and drive technological advancement. Seeking an internship or entry-level opportunity to collaborate with a dynamic team.
+        </p>
+
+        <div class="section-title">Key Projects</div>
+        <div style="margin-bottom: 14px;">
+          <strong>AI Assistance Refrigerator</strong><br>
+          <ul style="font-size: 12px; color: #334155;">
+            <li><strong>Cameras & Sensors:</strong> Monitors fridge contents, recognizes items, tracks freshness/expiration.</li>
+            <li><strong>Machine Learning:</strong> Analyzes usage patterns, predicts inventory needs, suggests recipes.</li>
+            <li><strong>Voice Assistants:</strong> Amazon Alexa & Google Assistant voice reminder integration.</li>
+            <li><strong>Smartphone Apps:</strong> Remote control for fridge settings, shopping list creation.</li>
+            <li><strong>Temperature Control:</strong> Optimizes temperature for food freshness & energy efficiency.</li>
+          </ul>
+        </div>
+
+        <div style="margin-bottom: 14px;">
+          <strong>Contact Manager with Payment System</strong><br>
+          <p style="font-size: 12px; color: #334155;">
+            Python desktop application to store and manage contact information, categorize contacts, add notes, and process secure UPI payment transactions.
+          </p>
+        </div>
+
+        <div style="margin-bottom: 14px;">
+          <strong>Web Projects & UI/UX</strong><br>
+          <ul style="font-size: 12px; color: #334155;">
+            <li><strong>Portfolio Website:</strong> Interactive developer platform built with React & Tailwind CSS.</li>
+            <li><strong>Amazon & Zomato Clones:</strong> Front-end web replicas built using HTML5 & CSS3.</li>
+            <li><strong>Figma Design:</strong> UI/UX wireframing, clickable prototyping & mobile interface design.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
