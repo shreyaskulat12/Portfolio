@@ -36,6 +36,7 @@ const socials = [
 export function Contact() {
   const [copied, setCopied] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
   const {
     register,
@@ -50,12 +51,35 @@ export function Contact() {
     setTimeout(() => setCopied(false), 2500);
   };
 
-  const onSubmit = async (_data: FormData) => {
-    // Integrate EmailJS or your preferred API here
-    await new Promise((r) => setTimeout(r, 1200));
-    setSubmitted(true);
-    reset();
-    setTimeout(() => setSubmitted(false), 5000);
+  const onSubmit = async (data: FormData) => {
+    setErrorMessage(null);
+    const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || 'c63cb719-20a4-417c-900c-cc90c5577d39';
+
+    try {
+      const formData = new window.FormData();
+      formData.append('access_key', accessKey);
+      formData.append('name', data.name);
+      formData.append('email', data.email);
+      formData.append('subject', data.subject);
+      formData.append('message', data.message);
+      formData.append('from_name', `${data.name} (via Portfolio Website)`);
+
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData,
+      });
+
+      const result = await response.json();
+      if (result.success) {
+        setSubmitted(true);
+        reset();
+        setTimeout(() => setSubmitted(false), 5000);
+      } else {
+        setErrorMessage(result.message || 'Failed to send message. Please try again.');
+      }
+    } catch {
+      setErrorMessage('Network error. Please check your internet connection or email directly.');
+    }
   };
 
   const inputClass = (hasError: boolean) =>
@@ -229,6 +253,12 @@ export function Contact() {
                     />
                     {errors.message && <p className="mt-1 text-xs text-red-500">{errors.message.message}</p>}
                   </div>
+
+                  {errorMessage && (
+                    <div className="p-3 rounded-xl bg-red-50 dark:bg-red-900/30 border border-red-200 dark:border-red-800 text-red-600 dark:text-red-400 text-xs">
+                      {errorMessage}
+                    </div>
+                  )}
 
                   <button
                     type="submit"
